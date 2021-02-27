@@ -11,6 +11,15 @@ def login():
 @app.route('/register')
 def register():
     return render_template('register.html')
+
+@app.route('/points')
+def points():
+    return render_template('points.html')
+
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
 @app.route('/login_validation', methods=['POST'])
 def login_validation():
     global n
